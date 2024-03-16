@@ -1,0 +1,46 @@
+@use '../util' as u;
+
+.intro {
+    @include u.setup(u.$second-bg);
+    // width: 100vw;
+
+    &__whole {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-left: 2rem;
+        // background-color: wheat;
+        // display: flex;
+        // align-content: flex-end;
+        
+    }
+
+    &__first, &__second{
+        font-weight: 900;
+        letter-spacing: 0;
+        line-height: 1;
+        
+    }
+
+    &__first {
+        // font-size: clamp(2rem, 0.5999999999999999rem + 7.000000000000001vw, 9rem);
+        
+        // font-size: clamp(3.375rem, 1.25rem + 10.625vw, 14rem);
+
+        font-size: clamp(2rem, -0.3999999999999999rem + 12vw, 14rem);
+        
+       
+    }
+
+    &__second {
+        // font-size: clamp(3rem, 1.2000000000000002rem + 9vw, 12rem);
+        
+
+        // font-size: clamp(3.625rem, 1.15rem + 12.375vw, 16rem);
+        
+        font-size: clamp(3rem, 0.3999999999999999rem + 13vw, 16rem);
+       
+       
+    }
+    
+}

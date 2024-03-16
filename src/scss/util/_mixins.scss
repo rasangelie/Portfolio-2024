@@ -1,0 +1,7 @@
+
+//height and bg of the screen
+@mixin setup($bg-color) {
+    background-color: $bg-color;
+    height: 100vh;
+    
+}
