@@ -1,16 +1,21 @@
+---
+import logo from '../assets/logo.svg'
+---
+
 <header class="header a white">
     <div class="header__logo">
-        <img src="src/assets/logo.svg" alt="logo">
+        <img src={logo.src} alt="logo">
     </div>
     
     <nav>
-        <span class="material-symbols-outlined header">
+        
+        <ul class="flex-header">
+            <li class="hide"><a href="#">about</a></li>
+            <li class="hide"><a href="#">projects</a></li>
+            <li class="hide"><a href="#">contact</a></li>
+            <span class="material-symbols-outlined header">
             menu
-        </span>
-        <!-- <ul class="flex-header">
-            <li><a href="#">about</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="#">contact</a></li>
-        </ul> -->
+            </span>
+        </ul>
     </nav>
 </header>
