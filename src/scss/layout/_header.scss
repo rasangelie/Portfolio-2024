@@ -4,13 +4,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3rem 0.5rem 2rem;
     background-color: u.$second-bg;
     position: fixed;
     width: 100%;
     top: 0px;
     z-index: 1;
     // border: 1px solid;
+    
 
     .flex-header {
         display: flex;
