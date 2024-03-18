@@ -10,6 +10,7 @@ header {
     width: 100%;
     top: 0px;
     z-index: 1;
+    background-color: aqua;
     // border: 1px solid;
     
 
@@ -33,7 +34,9 @@ header {
     }
 
     a {
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
+        font-size: 0.75rem;
+        font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
     }
 
     //hides the about, projects, contact when the screen is small
