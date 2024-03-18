@@ -31,8 +31,8 @@
 
 
     &__aText {
-        font-size: clamp(3rem, 2.6rem + 2vw, 5rem);
-        // font-size: clamp(3rem, 2.4rem + 3vw, 6rem);
+        // font-size: clamp(3rem, 2.6rem + 2vw, 5rem);
+        font-size: clamp(3rem, 2.4rem + 3vw, 6rem);
         font-weight: 900;
         margin-top: 1.5rem;
         margin-bottom: 0.625rem;
@@ -54,17 +54,16 @@
             padding: 3rem 0rem 2rem;
             
         }
-        
             
         &__image-size {
-            // height: 36.25rem;
+            height: 36.25rem;
             // height: 42.836rem;
-            height: 40.375rem;
-            
+            // height: 40.375rem;
+            // height: 37.313rem;            
         }
 
         &__aText {
-            margin-top: 2.8rem;
+            margin-top: 0.3rem;
             // margin-bottom: 0.625rem;
         }
 
