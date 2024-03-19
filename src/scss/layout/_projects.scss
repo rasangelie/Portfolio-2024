@@ -1,0 +1,65 @@
+@use '../util' as u;
+
+.projects {
+    // background-color: u.$second-bg;
+    @include u.setup(u.$second-bg);
+
+    &__container {
+        margin: 0 2rem;
+        display: grid;
+        grid-template-rows: 1fr;
+        row-gap: 2rem;
+    }
+
+    //project title
+    &__title {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    &__size {
+        font-size: clamp(3rem, 2.4rem + 3vw, 6rem);
+        font-weight: 900;
+    }
+
+    //card
+    &__proj {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid;
+    }
+
+    //image
+    &__image {
+        // min-width: 290px;
+        height: 280px;
+        background-color: palegreen;
+        
+    }
+
+    &__role {
+        display: flex;
+        column-gap: 1rem;
+    }
+
+    //Frontend Dev, React size
+    .roleSize {
+        border: 1px solid;
+        padding: 0.125rem 0.5rem;
+        border-radius: 1.75rem;
+        font-size:0.875rem;
+    }
+    
+    &__projTitle {
+        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 1.35rem + 0.75vw, 2.25rem);
+        font-weight: 900;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    
+    
+
+}
