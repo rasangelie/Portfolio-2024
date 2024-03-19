@@ -1,7 +1,7 @@
 @use '../util' as u;
 
 .intro {
-    @include u.setup(u.$first-bg);
+    @include u.setup(u.$second-bg);
     // width: 100vw;
 
     &__whole {

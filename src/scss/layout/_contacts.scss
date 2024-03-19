@@ -4,7 +4,7 @@
 
 
 .contacts {
-    @include u.setup(u.$first-bg);
+    @include u.setup(u.$second-bg);
     display: flex;
     flex-direction: column;
     justify-content: center;
