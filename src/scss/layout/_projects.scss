@@ -1,14 +1,16 @@
 @use '../util' as u;
 
 .projects {
-    // background-color: u.$second-bg;
-    @include u.setup(u.$second-bg);
+    background-color: u.$second-bg;
+    margin-bottom: 4rem;
+    
 
     &__container {
         margin: 0 2rem;
         display: grid;
         grid-template-rows: 1fr;
         row-gap: 2rem;
+        // background-color: palevioletred;        
     }
 
     //project title
@@ -27,16 +29,26 @@
     &__proj {
         display: flex;
         flex-direction: column;
+        padding: 2rem 2rem;
         border: 1px solid;
+        
+       
+    }
+
+    img {
+        max-width: 100%;
     }
 
     //image
     &__image {
         // min-width: 290px;
-        height: 280px;
-        background-color: palegreen;
+        // height: 280px;
+        width: 100%;
+        object-fit: cover;
+        // background-color: palegreen;
         
     }
+
 
     &__role {
         display: flex;
@@ -48,7 +60,9 @@
         border: 1px solid;
         padding: 0.125rem 0.5rem;
         border-radius: 1.75rem;
-        font-size:0.875rem;
+        // font-size:0.875rem;
+        font-size: 0.75rem;
+        font-size: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
     }
     
     &__projTitle {
@@ -60,6 +74,27 @@
     }
 
     
+    @include u.breakpoint(medium) {
+        &__container {
+            margin: 0 4rem;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            column-gap: 4rem;
+            row-gap: 6rem;
+        }
+
+        .projects__proj:nth-child(3),
+        .projects__proj:nth-child(6) {
+            grid-column: span 2;
+        }
+
+        
+
+        &__title {
+            padding: 4rem 0 5rem 0;
+        }
+    }
+
     
 
 }

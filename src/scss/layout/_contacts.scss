@@ -1,0 +1,9 @@
+@use '../util' as u;
+
+.contacts {
+    @include u.setup(u.$first-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
