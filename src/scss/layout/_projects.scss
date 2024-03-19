@@ -3,10 +3,11 @@
 .projects {
     background-color: u.$second-bg;
     margin-bottom: 4rem;
+    // background-color: palevioletred;
+    margin: 0 2rem;
     
 
     &__container {
-        margin: 0 2rem;
         display: grid;
         grid-template-rows: 1fr;
         row-gap: 2rem;
@@ -17,7 +18,7 @@
     &__title {
         display: flex;
         justify-content: center;
-        padding: 2rem;
+        
     }
 
     &__size {
@@ -29,8 +30,9 @@
     &__proj {
         display: flex;
         flex-direction: column;
-        padding: 2rem 2rem;
+        padding: 1rem;
         border: 1px solid;
+       
         
        
     }
@@ -41,13 +43,13 @@
 
     //image
     &__image {
-        // min-width: 290px;
-        // height: 280px;
         width: 100%;
         object-fit: cover;
         // background-color: palegreen;
         
     }
+
+   
 
 
     &__role {
@@ -83,8 +85,7 @@
             row-gap: 6rem;
         }
 
-        .projects__proj:nth-child(3),
-        .projects__proj:nth-child(6) {
+        .projects__proj:nth-child(3) {
             grid-column: span 2;
         }
 
