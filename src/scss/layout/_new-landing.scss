@@ -9,9 +9,15 @@
 
     &__first {
         font-size: clamp(1.5rem, 0.32499999999999996rem + 5.875vw, 7.375rem);
-        font-weight: 900;
+        font-weight: 800;
         
         
+    }
+
+    @include u.breakpoint(slarge) {
+        &__first {  
+        font-size: clamp(7rem, 6.925rem + 0.375vw, 7.375rem);
+        }
     }
 
     &__text {

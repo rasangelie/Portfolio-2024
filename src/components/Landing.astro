@@ -13,7 +13,7 @@ import vs from  '../assets/icons/vs.svg'
 
 <section class="new">
     <div class="new__flex">
-        <h1  class="new__first">hola, I'm Angelie</h1>
+        <h1  class="new__first">hola, I'm Angelie.</h1>
         <p class="new__text">I am actively enhancing my skills in UI/UX and coding, dedicated to continuous learning and improvement.</p>
     </div>
 
@@ -49,7 +49,7 @@ import vs from  '../assets/icons/vs.svg'
 
     function addAnimation() {
         scrollers.forEach(scroller => {
-            scroller.setAttribute('data-animated', true)
+            scroller.setAttribute('data-animated', String(true));
 
             const scrollerInner = scroller.querySelector('.new__scroller-inner');
 
@@ -57,7 +57,8 @@ import vs from  '../assets/icons/vs.svg'
 
             scrollerContent.forEach((item) => {
                 const duplicatedItem = item.cloneNode(true);
-                duplicatedItem.setAttribute('aria-hidden', true);
+                const duplicatedElement = duplicatedItem as HTMLElement;
+                duplicatedElement.setAttribute('aria-hidden', 'true');
                 scrollerInner.appendChild(duplicatedItem);
             })
         });
