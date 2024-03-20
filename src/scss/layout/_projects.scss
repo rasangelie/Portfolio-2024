@@ -34,9 +34,12 @@
         // border: 1px solid;
         background-color: white; 
         filter: drop-shadow(0px 0px 8px #dddddd);
-       
-        
-       
+        transition: transform 0.3s ease;
+    }
+
+    &__proj:hover {
+        cursor: pointer;
+        transform: scale(1.03);
     }
 
     img {
@@ -72,6 +75,14 @@
         font-weight: 900;
         padding-top: 1rem;
         padding-bottom: 0.5rem;
+    }
+
+    //links hover
+
+
+    .aqualert:hover {
+        cursor: pointer;
+        
     }
 
     
