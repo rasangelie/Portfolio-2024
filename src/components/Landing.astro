@@ -1,0 +1,61 @@
+---
+import js from '../assets/icons/js.svg'
+import html from '../assets/icons/html.svg'
+import css from '../assets/icons/css.svg'
+import sass from '../assets/icons/sass.svg'
+import flutter from '../assets/icons/flutter.svg'
+import figma from '../assets/icons/figma.svg'
+import gsap from '../assets/icons/gsap.svg'
+import git from '../assets/icons/github.svg'
+import vs from  '../assets/icons/vs.svg'
+---
+
+
+<section class="new">
+    <div class="new__flex">
+        <h1  class="new__first">hola, I'm Angelie</h1>
+        <p class="new__text">I am actively enhancing my skills in UI/UX and coding, dedicated to continuous learning and improvement.</p>
+    </div>
+
+    <div class="new__center">
+        <div class="new__scroller">
+            <div class="new__scroller-inner">
+                <img src={js.src} alt="">
+                <img src={html.src}alt="">
+                <img src={css.src} alt="">
+                <img src={sass.src} alt="">
+                <img src={flutter.src} alt="">
+                <img src={figma.src} alt="">
+                <img src={gsap.src} alt="">
+                <img src={git.src} alt="">
+                <img src={vs.src} alt="">
+            </div>
+        </div>
+    </div>
+    
+        
+</section>
+
+<script>
+    const scrollers = document.querySelectorAll('.new__scroller');
+
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        addAnimation();
+    }
+
+    function addAnimation() {
+        scrollers.forEach(scroller => {
+            scroller.setAttribute('data-animated', true)
+
+            const scrollerInner = scroller.querySelector('.new__scroller-inner');
+
+            const scrollerContent = Array.from(scrollerInner.children);
+
+            scrollerContent.forEach((item) => {
+                const duplicatedItem = item.cloneNode(true);
+                duplicatedItem.setAttribute('aria-hidden', true);
+                scrollerInner.appendChild(duplicatedItem);
+            })
+        });
+    }
+</script>

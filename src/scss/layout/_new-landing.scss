@@ -1,0 +1,84 @@
+@use '../util' as u;
+
+.new{
+    @include u.setup(u.$second-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+
+    &__first {
+        font-size: clamp(1.5rem, 0.32499999999999996rem + 5.875vw, 7.375rem);
+        font-weight: 900;
+        
+        
+    }
+
+    &__text {
+        font-size: clamp(1rem, 0.6rem + 2vw, 3rem);
+        font-weight: 500;
+        
+    }
+
+    &__first, &__text {
+        text-align: center;
+    }
+
+    &__center {
+        // background-color: palegoldenrod;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    &__scroller {
+        // background-color: palegreen;
+        max-width: 300px;
+        overflow: hidden;
+    }
+
+    &__scroller-inner img {
+        width: 36px;
+        height: 36px;
+    }
+
+    &__scroller[data-animated="true"] {
+        // border: 5px solid lime;
+        overflow: hidden;
+        -webkit-mask: linear-gradient(
+            90deg, 
+            transparent, 
+            white 20%,
+            white 80%,
+            transparent);
+        mask: linear-gradient( 
+            90deg, 
+            transparent, 
+            white 20%,
+            white 80%,
+            transparent);
+    }
+
+    &__scroller[data-animated="true"] &__scroller-inner {
+        flex-wrap: nowrap;
+        animation: scroll 20s linear infinite;
+
+        
+    }
+
+    @keyframes scroll {
+        to {
+            transform: translate(calc(-50% - 5rem));
+        }
+    }
+
+    &__scroller-inner {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding-block: 1rem;
+        flex-wrap: wrap;
+    }
+
+    
+}
