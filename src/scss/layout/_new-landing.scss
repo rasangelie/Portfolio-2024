@@ -24,14 +24,20 @@
     }
 
     @include u.breakpoint(slarge) {
-        // &__first {  
-        // font-size: clamp(7rem, 6.925rem + 0.375vw, 7.375rem);
-        // }
-
         &__text {
             margin: 0 8rem;
-            // background-color: palegreen;
         }
+    }
+
+    @include u.breakpoint(xlarge) {
+        &__first {  
+            font-size: clamp(5rem, 4.7rem + 1.5vw, 6.5rem);
+        }
+
+        &__text {
+            font-size: clamp(2rem, 1.8rem + 1vw, 3rem);
+        }
+
     }
 
     &__first, &__text {
