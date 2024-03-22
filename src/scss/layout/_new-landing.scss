@@ -8,22 +8,30 @@
     padding: 0 2rem;
 
     &__first {
-        font-size: clamp(1.5rem, 0.32499999999999996rem + 5.875vw, 7.375rem);
+        // font-size: clamp(1.5rem, 0.32499999999999996rem + 5.875vw, 7.375rem);
+        font-size: clamp(1.5rem, 0.7999999999999999rem + 3.5000000000000004vw, 5rem);
         font-weight: 800;
         
         
     }
 
-    @include u.breakpoint(slarge) {
-        &__first {  
-        font-size: clamp(7rem, 6.925rem + 0.375vw, 7.375rem);
-        }
-    }
 
     &__text {
-        font-size: clamp(1rem, 0.6rem + 2vw, 3rem);
+        // font-size: clamp(1rem, 0.6rem + 2vw, 3rem);
+        font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
         font-weight: 500;
         
+    }
+
+    @include u.breakpoint(slarge) {
+        // &__first {  
+        // font-size: clamp(7rem, 6.925rem + 0.375vw, 7.375rem);
+        // }
+
+        &__text {
+            margin: 0 8rem;
+            // background-color: palegreen;
+        }
     }
 
     &__first, &__text {
@@ -44,8 +52,8 @@
     }
 
     &__scroller-inner img {
-        width: 36px;
-        height: 36px;
+        width: 28px;
+        height: 28px;
     }
 
     &__scroller[data-animated="true"] {
