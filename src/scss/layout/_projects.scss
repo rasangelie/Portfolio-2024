@@ -26,6 +26,13 @@
         font-weight: 900;
     }
 
+    @include u.breakpoint-down(small) {
+        &__title {
+            margin-top: 4rem;
+            
+        }
+    }
+
     //card
     &__proj {
         display: flex;
@@ -99,6 +106,8 @@
 
         &__title {
             padding: 4rem 0 5rem 0;
+            // background-color: palegreen;
+            margin-bottom: 1.5rem;
         }
     }
 

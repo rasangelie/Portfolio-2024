@@ -235,6 +235,11 @@ header .underline:hover {
   font-size: clamp(3rem, 2.4rem + 3vw, 6rem);
   font-weight: 900;
 }
+@media (max-width: 24.99875em) {
+  .projects__title {
+    margin-top: 4rem;
+  }
+}
 .projects__proj {
   display: flex;
   flex-direction: column;
@@ -291,6 +296,7 @@ header .underline:hover {
   }
   .projects__title {
     padding: 4rem 0 5rem 0;
+    margin-bottom: 1.5rem;
   }
 }
 
