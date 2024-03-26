@@ -236,7 +236,6 @@ header .underline:hover {
   }
   .about__details {
     padding-right: 8rem;
-    background-color: palegoldenrod;
   }
 }
 
@@ -316,14 +315,12 @@ header .underline:hover {
   }
   .projects__title {
     padding: 3rem 0 5rem 0;
-    background-color: palegreen;
     margin-bottom: 1.5rem;
   }
 }
 @media (min-width: 90em) {
   .projects__container {
     max-width: 1024px;
-    background-color: antiquewhite;
     -moz-column-gap: 6rem;
          column-gap: 6rem;
   }
