@@ -50,33 +50,14 @@
     &__proj:hover {
         cursor: pointer;
         transform: scale(1.03);
+        border-radius: 10px;
     }
 
     img {
         max-width: 100%;
     }
 
-    //image
-    // &__image {
-    //     // width: 100%;
-    //     object-fit: cover;
-    //     // background-color: palegreen;
-        
-    // }
-
-    @include u.breakpoint(xlarge) {
-
-        &__container {
-            max-width: 1024px;
-            background-color: antiquewhite;
-            
-        }
-
-        .center {
-            display: flex;
-            justify-content: center;
-        }
-    }
+   
 
     &__role {
         display: flex;
@@ -125,6 +106,22 @@
             padding: 3rem 0 5rem 0;
             background-color: palegreen;
             margin-bottom: 1.5rem;
+        }
+    }
+
+    @include u.breakpoint(xlarge) {
+
+        &__container {
+            max-width: 1024px;
+            background-color: antiquewhite;
+            column-gap: 6rem;
+            
+            
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
         }
     }
 

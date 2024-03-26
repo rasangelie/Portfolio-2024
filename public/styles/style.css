@@ -275,19 +275,10 @@ header .underline:hover {
 .projects__proj:hover {
   cursor: pointer;
   transform: scale(1.03);
+  border-radius: 10px;
 }
 .projects img {
   max-width: 100%;
-}
-@media (min-width: 90em) {
-  .projects__container {
-    max-width: 1024px;
-    background-color: antiquewhite;
-  }
-  .projects .center {
-    display: flex;
-    justify-content: center;
-  }
 }
 .projects__role {
   display: flex;
@@ -327,6 +318,18 @@ header .underline:hover {
     padding: 3rem 0 5rem 0;
     background-color: palegreen;
     margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 90em) {
+  .projects__container {
+    max-width: 1024px;
+    background-color: antiquewhite;
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
+  }
+  .projects .center {
+    display: flex;
+    justify-content: center;
   }
 }
 
