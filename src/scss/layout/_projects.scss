@@ -42,7 +42,10 @@
         background-color: white; 
         filter: drop-shadow(0px 0px 8px #dddddd);
         transition: transform 0.3s ease;
+        
     }
+
+    
 
     &__proj:hover {
         cursor: pointer;
@@ -54,11 +57,25 @@
     }
 
     //image
-    &__image {
-        width: 100%;
-        object-fit: cover;
-        // background-color: palegreen;
+    // &__image {
+    //     // width: 100%;
+    //     object-fit: cover;
+    //     // background-color: palegreen;
         
+    // }
+
+    @include u.breakpoint(xlarge) {
+
+        &__container {
+            max-width: 1024px;
+            background-color: antiquewhite;
+            
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__role {
@@ -105,8 +122,8 @@
         }
 
         &__title {
-            padding: 4rem 0 5rem 0;
-            // background-color: palegreen;
+            padding: 3rem 0 5rem 0;
+            background-color: palegreen;
             margin-bottom: 1.5rem;
         }
     }

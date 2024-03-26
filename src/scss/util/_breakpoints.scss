@@ -9,7 +9,8 @@ $breakpoints-up: (
     'large': f.em(900),
     'slarge': f.em(992),
     'xlarge': f.em(1440),
-    'tablet': f.em(768)
+    'tablet': f.em(768),
+    'biggerDesktop': f.em(1600)
 );
 
 //down-> 699.98px, 899.98px, 1439.98.px

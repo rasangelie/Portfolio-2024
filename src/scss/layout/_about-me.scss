@@ -58,10 +58,7 @@
         }
             
         &__image-size {
-            max-height: 36.25rem;
-            // height: 42.836rem;
-            // height: 40.375rem;
-            // height: 37.313rem;            
+            max-height: 36.25rem;      
         }
 
         &__aText {
@@ -73,4 +70,26 @@
             padding-right: 4rem;
         }
     }
+
+    @include u.breakpoint(xlarge) {
+        &__grid {
+            padding: 3rem 8rem 2rem;
+        }
+
+        &__image-size {
+            max-height: 40rem;      
+        }
+
+        &__aText {
+            margin-top: 0.3rem;
+            // margin-bottom: 0.625rem;
+        }
+
+        &__details {
+            padding-right: 8rem;
+            background-color: palegoldenrod;
+        }
+    }
+
+    
 }
