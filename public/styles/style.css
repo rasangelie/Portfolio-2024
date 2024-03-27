@@ -69,11 +69,11 @@ ul {
 }
 .new__first {
   font-size: clamp(1.8rem, 0.6854rem + 5.573vw, 7.373rem);
-  font-weight: 800;
+  font-weight: 900;
 }
 .new__text {
   font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
-  font-weight: 500;
+  font-weight: 600;
 }
 @media (min-width: 62em) {
   .new__text {
